@@ -67,3 +67,5 @@ const renderer = RendererFactory.create(format);
 const result = renderer.wrapDocument(content);
 
 output ? writeFileSync(output, result) : console.log(result);
+summary.printSummary();
+perf.printTotal();
